@@ -2,4 +2,72 @@
   background-color: #FFBA00;
   padding-top: 90px;
   padding-bottom: 90px;
+
+  &_wrap {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  &_headline {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &_comments {
+    margin-top: 100px;
+  }
+}
+
+.review-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+
+  &_link {
+    border-bottom: 0;
+    text-decoration: none;
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.review-comment {
+  margin-bottom: 65px;
+  font-family: 'SF Pro Display';
+  color: #4E3900;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &_box {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  &_photo {
+    margin-right: 20px;
+    min-width: 50px;
+
+    img {
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  &_content {
+    font-size: 21px;
+    line-height: 30px;
+    color: #4E3900;
+  }
 }
