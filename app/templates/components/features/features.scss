@@ -1,0 +1,47 @@
+.features {
+
+  &_wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  &_list {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.feature {
+  font-family: 'SF Pro Display';
+  margin-right: 55px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &_box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &_icon {
+    margin-bottom: 15px;
+    min-height: 120px;
+  }
+
+  &_name {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0 50px;
+  }
+
+  &_info {
+    font-size: 17px;
+    line-height: 26px;
+    color: #818992;
+  }
+}

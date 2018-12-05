@@ -1,0 +1,13 @@
+.footer {
+  padding-top: 90px;
+  padding-bottom: 250px;
+
+  &_wrap {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  &_header {
+    margin-bottom: 60px;
+  }
+}
