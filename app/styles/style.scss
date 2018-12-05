@@ -1,8 +1,0 @@
-@charset "utf-8";
-
-@import "variables.scss"; // переменные
-
-@import "helpers/*.scss";
-@import "base/*.scss";
-
-@import "../templates/components/**/*.scss"; // Модули и блоки
