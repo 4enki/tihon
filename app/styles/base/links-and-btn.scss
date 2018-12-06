@@ -20,3 +20,35 @@ a {
     color: $link-active-color;
   }
 }
+
+.button {
+  background-color: #FFBA00;
+  border: 1px solid #FFBA00;
+  padding: 20px 55px 20px 55px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: 'SF Pro Display';
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: lowercase;
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .2s ease;
+  vertical-align: middle;
+  position: relative;
+
+  &:hover {
+    background-color: #8681FC;
+    border-color: #8681FC;
+    color: #ffffff;
+  }
+
+  &:focus {
+    background-color: #F3F7F8;
+    border-color: #8681FC;
+    color: #2E2B77;
+  }
+}
