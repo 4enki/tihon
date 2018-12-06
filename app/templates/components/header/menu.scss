@@ -1,4 +1,126 @@
 .menu {
   height: 80px;
-  background-color: #FFBA00;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: all .3s ease;
+  overflow: hidden;
+  z-index: 100;
+
+  &_wrap {
+    padding: 0 0 0 85px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  &.is-open {
+    background-color: #FFBA00;
+
+    .menu-list {
+      opacity: 1;
+      visibility: visible;
+      z-index: 1;
+      left: 0;
+    }
+  }
+}
+
+.hamburger {
+  display: flex;
+  width: 40px;
+  height: 28px;
+  flex-direction: column;
+  transition: all .3s ease;
+  position: relative;
+  justify-content: space-between;
+
+  &-wrap {
+    max-width: 80px;
+    margin-right: 65px;
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    align-items: center;
+    transition: all .3s ease;
+
+    &:hover {
+
+      .hamburger_i {
+        background-color: #4E3900;
+      }
+    }
+
+    &.is-active {
+
+      .hamburger {
+
+        .hamburger_i {
+          animation: pulse 1.8s tocross;
+          background-color: #262d30;
+          border-color: #262d30;
+
+          &:nth-child(1) {
+            transform: translate(0px, 12px) rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            background-color: #262d30;
+            border-color: #262d30;
+            opacity: 0;
+            transform: translate(0px, 0px);
+          }
+
+          &:nth-child(3) {
+            transform: translate(0px, -12px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+  &_i {
+    background-color: #FFBA00;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+    transition: all .3s linear;
+    position: relative;
+  }
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-family: 'SF Pro Display';
+  position: relative;
+  transition: all .3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -10;
+  left: -400px;
+
+  &_item {
+    margin-right: 55px;
+
+    &:last-child { margin-right: 0; }
+  }
+
+  &_link {
+    font-size: 18px;
+    line-height: 18px;
+    color: #4E3900;
+    border-bottom: 0;
+    text-transform: lowercase;
+  }
 }
