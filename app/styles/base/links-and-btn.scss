@@ -41,14 +41,15 @@ a {
   position: relative;
 
   &:hover {
-    background-color: #8681FC;
-    border-color: #8681FC;
+    background-color: #FF9300;
+    border-color: #FF9300;
     color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .32);
   }
 
   &:focus {
-    background-color: #F3F7F8;
-    border-color: #8681FC;
-    color: #2E2B77;
+    background-color: #FF9300;
+    border-color: #FF9300;
+    color: #ffffff;
   }
 }

@@ -1,5 +1,6 @@
 .features {
-  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   &_wrap {
     max-width: 1080px;
@@ -32,6 +33,11 @@
   &_icon {
     margin-bottom: 15px;
     min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: flex-end;
   }
 
   &_name {
