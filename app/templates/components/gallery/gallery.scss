@@ -2,6 +2,11 @@
   padding-top: 80px;
   padding-bottom: 80px;
 
+  &_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   &_header {
     text-align: center;
 
@@ -33,6 +38,10 @@
   &_tabs {
     display: flex;
     justify-content: center;
+    margin-top: 60px;
+  }
+
+  &_panels {
     margin-top: 60px;
   }
 }
