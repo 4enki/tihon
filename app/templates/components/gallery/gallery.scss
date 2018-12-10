@@ -43,6 +43,21 @@
 
   &_panels {
     margin-top: 60px;
+
+    a {
+      border-bottom: 0;
+      text-decoration: none;
+    }
+
+    .zoom-gallery {
+
+      img {
+        vertical-align: middle;
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: cover;
+      }
+    }
   }
 }
 
