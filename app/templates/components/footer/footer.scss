@@ -68,6 +68,11 @@
     border-bottom: 0;
     line-height: 35px;
     color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      text-shadow: 0 0 4px #FFBA00;
+    }
   }
 
   &-social {
