@@ -1,0 +1,148 @@
+@media #{$sm} {
+
+  .menu {
+
+    &_wrap {
+      padding: 0;
+    }
+
+    .hamburger-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 80px;
+    }
+
+    &.is-open {
+      height: 100vh;
+    }
+
+    &-list {
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+
+      &_item {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+
+      &_link {
+        font-size: 28px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .features,
+  .gift,
+  .gallery,
+  .header, {
+    display: none;
+  }
+
+  .review {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    &-bg {
+      opacity: .85;
+      transform: scale(.7);
+      top: -305px;
+      bottom: auto;
+      z-index: 0;
+    }
+
+    &_wrap {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 30px;
+      z-index: 10;
+      position: relative;
+    }
+
+    &_headline {
+      padding-bottom: 30px;
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+
+      p {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    &-links {
+      transform: scale(.7);
+    }
+
+    &_comments {
+      padding-top: 30px;
+      margin-top: 0;
+    }
+
+    &-comment {
+      margin-bottom: 25px;
+
+      &_content {
+        font-size: 14px;
+        line-height: 20px;
+
+        p {
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &_header {
+
+      h2 {
+        font-size: 36px;
+        line-height: 36px;
+
+        &:before {
+          top: 0;
+        }
+      }
+
+      p {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    &_contacts {
+
+      &_box {
+        flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        .button {
+          display: none;
+          visibility: hidden;
+        }
+      }
+    }
+
+    &-tel {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}

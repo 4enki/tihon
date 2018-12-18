@@ -1,6 +1,18 @@
 .gallery {
   padding-top: 80px;
   padding-bottom: 80px;
+  position: relative;
+
+  &-bg {
+    position: absolute;
+    right: width('assets/images/bg-grid.png', -2);
+    top: -225px;
+    z-index: 10;
+    display: block;
+    width: width('assets/images/bg-grid.png');
+    height: height('assets/images/bg-grid.png');
+    background-repeat: no-repeat;
+  }
 
   &_wrap {
     max-width: 1280px;
@@ -50,10 +62,6 @@
     }
 
     .zoom-gallery {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
       align-items: center;
       align-content: center;
