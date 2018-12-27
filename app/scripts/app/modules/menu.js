@@ -9,6 +9,16 @@ $(document).ready(function() {
     return false;
   });
 
+  $(window).scroll(function () {
+    let s_top = $("body").scrollTop();
+    console.log('s_top', s_top);
+    let yes = $("#review").offset().top;
+    console.log('yes', yes);
+    if (s_top >= yes) {
+      console.log("Yes");
+    }
+  });
+
 });
 
 // шпионский скролл в меню
