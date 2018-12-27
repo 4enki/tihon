@@ -4,6 +4,57 @@
   visibility: hidden;
 }
 
+@media only screen and (min-width: 991px) and (max-width: 1299px) {
+
+  .header {
+    padding-top: 90px;
+
+    &-bg {
+      top: -224px;
+      right: -475px;
+    }
+
+    &_wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 30px;
+      z-index: 10;
+      position: relative;
+    }
+  }
+
+  .gift {
+
+    &-bg {
+      top: 650px;
+      left: -555px;
+    }
+
+    &_content {
+      padding-top: 150px;
+      padding-left: 500px;
+    }
+  }
+
+  .gallery {
+
+    &_wrap {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 30px;
+      z-index: 10;
+      position: relative;
+    }
+
+    &_panels {
+
+      .zoom-gallery {
+        justify-content: center;
+      }
+    }
+  }
+}
+
 @media #{$sm} {
 
   .menu {
