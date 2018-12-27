@@ -91,7 +91,9 @@
     padding-bottom: 30px;
 
     &-bg {
-      display: none;
+      background-size: 486px auto;
+      top: 560px;
+      left: -144px;
     }
 
     &_wrap {
@@ -135,12 +137,20 @@
     }
 
     &_content {
+      padding-top: 408px;
       padding-left: 0;
-      padding-top: 0;
     }
 
     &_actions {
       margin-top: 30px;
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+
+      .button {
+        width: 100%;
+        max-width: 300px;
+      }
     }
   }
 
@@ -149,7 +159,7 @@
     li {
       font-size: 16px;
       line-height: 18px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       padding-left: 60px;
 
       &:last-child {
