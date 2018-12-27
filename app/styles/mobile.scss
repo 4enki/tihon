@@ -41,7 +41,7 @@
     }
   }
 
-  .header, {
+  .header {
     display: none;
   }
 
@@ -87,9 +87,12 @@
   }
 
   .gift {
-    display: none !important;
     padding-top: 50px;
     padding-bottom: 30px;
+
+    &-bg {
+      display: none;
+    }
 
     &_wrap {
       max-width: 100%;
@@ -101,6 +104,7 @@
 
     &_header {
       text-align: center;
+      padding-bottom: 40px;
 
       .not-mobile {
         display: none;
@@ -127,6 +131,34 @@
           left: 8px;
           transform: scale(.75);
         }
+      }
+    }
+
+    &_content {
+      padding-left: 0;
+      padding-top: 0;
+    }
+
+    &_actions {
+      margin-top: 30px;
+    }
+  }
+
+  .gift-list {
+
+    li {
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 40px;
+      padding-left: 60px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        width: 42px;
+        height: 42px;
       }
     }
   }
