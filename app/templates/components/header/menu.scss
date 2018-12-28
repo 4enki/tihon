@@ -5,12 +5,12 @@
   right: 0;
   width: 100%;
   background-color: transparent;
-  transition: all .55s ease;
+  transition: all .35s ease;
   overflow: hidden;
   z-index: 100;
 
   &_wrap {
-    padding: 0 0 0 85px;
+    padding: 0 0 0 20px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -25,6 +25,14 @@
       visibility: visible;
       z-index: 1;
       left: 0;
+    }
+  }
+
+  &.is-dark {
+
+    .hamburger_i {
+      background-color: #4E3900;
+      transition: all .1s ease;
     }
   }
 }
@@ -114,6 +122,10 @@
     margin-right: 55px;
 
     &:last-child { margin-right: 0; }
+
+    &.active .menu-list_link {
+      color: #ffffff;
+    }
   }
 
   &_link {
